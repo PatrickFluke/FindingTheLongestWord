@@ -1,4 +1,4 @@
-function findLongestWordLength(str) {
+function findLongestWordLength(str) { 
   var length = str.length;
   let words = [];
   var i = 0;
