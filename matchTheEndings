@@ -1,0 +1,26 @@
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  var targetArray = [...target];
+  var strArray = [...str];
+  var count = strArray.length;
+  var test = true;
+  for (let i = targetArray.length; i > 0; i--)
+  {
+    console.log(targetArray[i-1] + " " + i + " vs " + strArray[count-1]);
+    if (targetArray[i-1] == strArray[count-1] & test==true)
+    {
+      test = true;
+    }
+    else 
+    {
+      test = false;
+    }
+    count--;
+  }
+
+  return test;
+}
+
+
+confirmEnding("Open sesame", "game");
