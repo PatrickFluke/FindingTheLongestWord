@@ -1,0 +1,29 @@
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  let arrayToReturn = [];
+  var arrayLimiter = 0;
+  var subArrayIndex = 0;
+  for (let i = 0; i < arr.length; i++)
+  {
+    if (arrayLimiter === 0)
+    {
+      arrayToReturn[subArrayIndex] = [];
+    }
+    arrayToReturn[subArrayIndex].push(arr[i]);
+    arrayLimiter++;
+    if (arrayLimiter > size - 1)
+    {
+      arrayLimiter = 0;
+      subArrayIndex++;
+    }
+  
+  }
+  for (let f = 0; f < arrayToReturn.length; f++)
+  {
+    console.log(arrayToReturn[f] + " is the " + f + " array.");
+  }
+  console.log(arrayToReturn);  
+ return arrayToReturn;
+}
+
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3);
