@@ -13,9 +13,6 @@ Array.prototype.myMap = function(callback){
   {
     newArray.push(s[i]*2);
   } 
-  console.log([...newArray]);
-  // Add your code above this line
-  console.log(newArray + ' is the array.');
   return newArray;
 };
 
