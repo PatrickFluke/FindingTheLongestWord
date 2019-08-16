@@ -1,5 +1,6 @@
 /* 
 I was confused by how Map works, but this one lesson in FreeCodeCamp was amazing. 
+https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/implement-map-on-a-prototype
 */
 
 // the global Array
