@@ -1,0 +1,27 @@
+//This is yet another weird one, but it's done!
+
+function translatePigLatin(str) {
+  let firstLetterClusterRegex = /[aeiou]/
+  var firstIndex = firstLetterClusterRegex.exec(str);
+  if (firstIndex !== null)
+  {
+  
+  if (str[0] == "a" || str[0] == "e" || str[0] == "i" || str[0] == "o" || str[0] == "u")
+  {
+    str = str + "way";
+  }
+  else{
+    str = str.substring(firstIndex.index) + str.substring(0,firstIndex.index) + "ay"
+  }
+  console.log(firstIndex);
+  
+
+}
+else{
+  str = str + "ay"
+}
+return str;
+}
+
+
+console.log(translatePigLatin("th"));
