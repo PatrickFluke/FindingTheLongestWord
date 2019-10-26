@@ -1,0 +1,18 @@
+//This took a little bit haha! Kept trying to use push, actually decided that it was doing the loop backwards not the other way around.
+
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum == endNum)
+  {
+    return [startNum];
+  }
+  else
+  {
+    var numbers = rangeOfNumbers(startNum + 1, endNum);
+    numbers.unshift(startNum)
+    console.log(numbers);
+    return numbers;
+  }
+};
+
+console.log(rangeOfNumbers(1,5));
+
